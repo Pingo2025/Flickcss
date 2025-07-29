@@ -1,25 +1,32 @@
 {
   "name": "flickcss",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Framework CSS moderno, poderoso e responsivo com classes utilitárias inspiradas no Tailwind e Bootstrap.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "flickcss": "dist/cli/index.js"
+  },
   "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["css", "framework", "utility-first", "postcss", "tailwind", "bootstrap", "jit"],
+  "author": "Ndombe Maria Rafael",
   "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^24.1.0",
-    "commander": "^14.0.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3",
-    "vite": "^7.0.6"
-  },
   "dependencies": {
     "chevrotain": "^11.0.3",
     "chokidar": "^4.0.3",
     "fast-glob": "^3.3.3",
-    "postcss": "^8.5.6"
+    "postcss": "^8.5.6",
+    "commander": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.6"
   }
 }
